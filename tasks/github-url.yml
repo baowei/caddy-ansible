@@ -43,7 +43,7 @@
 
 - name: Set Caddy urls
   ansible.builtin.set_fact:
-    caddy_url: "https://github.com/caddyserver/caddy/releases/download/\
+    caddy_url: "https://github.com/baowei/caddy-route53/releases/download/\
                 {{ caddy_tag }}/caddy_{{ caddy_version }}_{{ caddy_os }}_{{ go_arch }}.tar.gz"
-    caddy_checksum_url: "sha512:https://github.com/caddyserver/caddy/releases/download/\
-                         {{ caddy_tag }}/caddy_{{ caddy_version }}_checksums.txt"
+    caddy_checksum_url: "sha512:https://github.com/baowei/caddy-route53/releases/download/\
+                         {{ caddy_tag }}/caddy_{{ caddy_version }}_{{ go_arch }}_checksums.txt"
